@@ -138,7 +138,7 @@ export default function Home() {
               {quantity}
             </Typography>
             <Stack direction="row" spacing={3}>
-            // buttons to add or remove the quantity 
+            {/* buttons to add or remove quantity */}
             <Button variant="contained" onClick={()=>{
               addItem(name)
             }}>
