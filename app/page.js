@@ -48,11 +48,7 @@ export default function Home() {
     }
     await updateInventory()
   }
-
-
-
-  // Use useEffect to call updateInventory when the component mounts
-  useEffect(() => {
+   useEffect(() => {
     updateInventory();
   }, []);
 
