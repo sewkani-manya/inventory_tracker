@@ -6,13 +6,13 @@ import { Box, Button, Modal,Stack, TextField, Typography } from "@mui/material";
 import { collection, getDoc, getDocs, query, doc, deleteDoc, setDoc } from "firebase/firestore";
 
 export default function Home() {
-  // Inventory management helper functions
+  
   const [inventory, setInventory] = useState([]);
-  // State variables to add and remove items
+  
   const [open, setOpen] = useState(false);
   const [itemName, setItemName] = useState('');
 
-  // Fetch inventory from Firebase
+  
   const updateInventory = async () => {
     const snapshot = query(collection(firestore, 'inventory'));
     const docs = await getDocs(snapshot);
