@@ -1,4 +1,4 @@
-// File: C:\Users\MANYA\Documents\inventory_tracker\inventory_management\app\layout.js
+// File: C:\Users\MANYA\Documents\inventory_tracker\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
