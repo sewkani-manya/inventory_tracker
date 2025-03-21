@@ -4,6 +4,17 @@ import { useState, useEffect } from "react";
 import { firestore } from "@/firebase";
 import { Box, Button, Modal,Stack, TextField, Typography } from "@mui/material";
 import { collection, getDoc, getDocs, query, doc, deleteDoc, setDoc } from "firebase/firestore";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
+const auth = getAuth();
+signInWithEmailAndPassword(auth, "user@example.com", "your password")
+  .then((userCredential) => {
+    console.log("User signed in:", userCredential.user);
+  })
+  .catch((error) => {
+    console.error("Login failed:", error.message);
+  });
+
 
 export default function Home() {
   
